@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goit-react41-hw-02-pb-formik/static/css/main.e3ed67ce.css",
+    "main.js": "/goit-react41-hw-02-pb-formik/static/js/main.4ae7a418.js",
+    "index.html": "/goit-react41-hw-02-pb-formik/index.html",
+    "main.e3ed67ce.css.map": "/goit-react41-hw-02-pb-formik/static/css/main.e3ed67ce.css.map",
+    "main.4ae7a418.js.map": "/goit-react41-hw-02-pb-formik/static/js/main.4ae7a418.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3ed67ce.css",
+    "static/js/main.4ae7a418.js"
+  ]
+}
