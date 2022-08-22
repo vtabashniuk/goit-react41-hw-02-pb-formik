@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0 0;
+  display: grid;
+  row-gap: 10px;
+}
+
+.contactItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  grid-auto-rows: max-content;
+}

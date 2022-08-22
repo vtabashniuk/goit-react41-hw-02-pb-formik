@@ -1,0 +1,28 @@
+.form {
+  padding: 10px 0 0 0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px;
+}
+
+.inputWrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.input {
+  font-size: 24px;
+  width: 250px;
+}
+
+.buttonWrapper {
+    justify-self: center;
+    align-self: center;
+}
