@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { Section } from './common';
-import { Form } from './Form/Form';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
+import { ContactForm } from './ContactForm/ContactForm';
 
 export class App extends Component {
   state = {
@@ -11,8 +11,7 @@ export class App extends Component {
     filter: '',
   };
 
-  addContact = (e, { name, number }) => {
-    e.preventDefault();
+  addContact = ({ name, number }) => {
     if (!this.duplicationCheck(name)) {
       const id = nanoid(4);
       this.setState(prevState => ({
@@ -55,17 +54,17 @@ export class App extends Component {
     return (
       <>
         <Section title="Phonebook">
-          <Form onSubmit={this.addContact} />
+          <ContactForm addContact={this.addContact} />
         </Section>
-        <Section title="Contacts">
-          <Filter onChange={this.filterContacts} />
-          {contacts.length > 0 && (
+        {contacts.length > 0 && (
+          <Section title="Contacts">
+            <Filter onChange={this.filterContacts} value={filter} />
             <ContactList
               contacts={filteredContacts}
               deleteContact={this.deleteContact}
             />
-          )}
-        </Section>
+          </Section>
+        )}
       </>
     );
   }

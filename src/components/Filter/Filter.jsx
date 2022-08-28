@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import { labelID } from 'utils/labels';
-import styles from './Filter.module.css'
+import styles from './Filter.module.css';
 
-export const Filter = ({ onChange }) => {
+export const Filter = ({ onChange, value }) => {
   return (
     <div className={styles.wrapper}>
-      <label className={styles.label} htmlFor={labelID.filter}>Find contacs by name</label>
+      <label className={styles.label} htmlFor={labelID.filter}>
+        Find contacs by name
+      </label>
       <input
         className={styles.input}
         type="text"
@@ -14,11 +16,17 @@ export const Filter = ({ onChange }) => {
         onChange={e => {
           onChange(e);
         }}
+        value={value}
       />
     </div>
   );
 };
 
+Filter.defaultProps = {
+  value: '',
+};
+
 Filter.propTypes = {
   onChange: PropTypes.func.isRequired,
+  value: PropTypes.string,
 };
