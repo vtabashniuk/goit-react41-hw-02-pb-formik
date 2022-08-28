@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/goit-react41-hw-02-pb-formik/static/css/main.e3ed67ce.css",
-    "main.js": "/goit-react41-hw-02-pb-formik/static/js/main.4ae7a418.js",
+    "main.css": "/goit-react41-hw-02-pb-formik/static/css/main.931f7ccd.css",
+    "main.js": "/goit-react41-hw-02-pb-formik/static/js/main.f8692551.js",
     "index.html": "/goit-react41-hw-02-pb-formik/index.html",
-    "main.e3ed67ce.css.map": "/goit-react41-hw-02-pb-formik/static/css/main.e3ed67ce.css.map",
-    "main.4ae7a418.js.map": "/goit-react41-hw-02-pb-formik/static/js/main.4ae7a418.js.map"
+    "main.931f7ccd.css.map": "/goit-react41-hw-02-pb-formik/static/css/main.931f7ccd.css.map",
+    "main.f8692551.js.map": "/goit-react41-hw-02-pb-formik/static/js/main.f8692551.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3ed67ce.css",
-    "static/js/main.4ae7a418.js"
+    "static/css/main.931f7ccd.css",
+    "static/js/main.f8692551.js"
   ]
 }
